@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto+Slab&display=swap');
 
 * {
     margin: 0;
@@ -21,8 +21,9 @@ body {
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: #000;
+    cursor: pointer;
 }
 
 input {
@@ -35,11 +36,42 @@ table {
 
 .wrapper {
     overflow: hidden;
-	position: relative;
+    position: relative;
 }
 
 .container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.title-20 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding-bottom: 27px;
+    margin-bottom: 23px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 25px);
+        width: 50px;
+        height: 2px;
+        background: $font-color;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-33 {
+    width: calc(33.3% - 30px);
+    flex-shrink: 0;
+    margin: 15px;
 }
