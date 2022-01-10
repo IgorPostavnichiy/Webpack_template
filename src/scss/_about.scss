@@ -18,9 +18,11 @@
         overflow: hidden;
         text-align: center;
         line-height: 0;
+        max-height: 250px;
 
         img {
             line-height: 0;
+            max-height: 250px;
         }
 
         &:before {
